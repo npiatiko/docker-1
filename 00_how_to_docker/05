@@ -1,0 +1,2 @@
+docker run --rm hello-world
+docker container ls -a
