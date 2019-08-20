@@ -1,8 +1,8 @@
 docker service create \
-  --name engineering-bay \
   -d \
+  --name marines \
   --network overmind \
   --replicas 2 \
   -e OC_USERNAME=user \
   -e OC_PASSWD=password \
-42school/engineering-bay
+42school/marine-squad
