@@ -18,3 +18,4 @@ RUN mkdir -p /etc/gitlab/ssl && \
 	echo "nginx['ssl_certificate_key'] = \"/etc/gitlab/ssl/selfsigned.key\"" >> /etc/gitlab/gitlab.rb
 ENTRYPOINT service ssh start && (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && gitlab-ctl tail
 #docker run --rm --name gitlab-ce -it -p 80:80 -p 23:22 -p 443:443 --privileged ft_git
+#docker-machine create --driver virtualbox --virtualbox-memory "4096" --virtualbox-cpu-count "2" Char
