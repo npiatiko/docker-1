@@ -12,4 +12,4 @@ ONBUILD RUN bundle install &&\
 	rake db:migrate && \
 	rake db:seed
 CMD bash
-#docker run --rm -p 3000:3000 -ti -v app:/opt/app ft_rails
+#docker build -t ft-rails:on-build .
